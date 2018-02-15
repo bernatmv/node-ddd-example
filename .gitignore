@@ -1,0 +1,20 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
+
+# Coverage
+coverage/
+
+# Transpiled files
+dist/
+
+# VS Code
+.vscode
+!.vscode/tasks.js
+
+# Misc
+.DS_Store

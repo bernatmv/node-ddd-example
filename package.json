@@ -1,0 +1,36 @@
+{
+  "name": "node-ddd-example",
+  "version": "1.0.0",
+  "description": "An example of a simple app using DDD",
+  "author": "Bernat Martinez Vidal",
+  "engineStrict": true,
+  "engines": {
+    "node": ">= 8.9.0"
+  },
+  "scripts": {
+    "clean": "rimraf coverage dist tmp",
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -w -p tsconfig.json",
+    "lint": "tslint -t stylish --project \"tsconfig.json\"",
+    "pretest": "npm run lint",
+    "test": "npm run test-only",
+    "test-only": "jest --coverage",
+    "test:watch": "jest --watch",
+    "start": "cd dist && node main.js"
+  },
+  "dependencies": {
+    "express": "4.16.2",
+    "tslib": "1.9.0"
+  },
+  "devDependencies": {
+    "@types/jest": "22.1.2",
+    "@types/node": "8.5.10",
+    "@types/express": "4.11.1",
+    "jest": "22.3.0",
+    "rimraf": "2.6.2",
+    "tslint": "5.9.1",
+    "tslint-config-airbnb": "5.6.0",
+    "tsutils": "2.21.1",
+    "typescript": "2.7.1"
+  }
+}
